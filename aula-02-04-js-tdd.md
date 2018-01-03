@@ -40,5 +40,5 @@
 
 * Template de Readme
 * Adicionar License - https://opensource.org/licenses/MIT
-* Adicionar Contributing - 
+* Adicionar Contributing 
 
