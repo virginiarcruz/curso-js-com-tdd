@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>03 - Array.from</title>
+</head>
+
+<body>
+
+    <ul id="list">
+        <li>Vick</li>
+        <li>Cruz</li>
+        <li>Rodrigues</li>
+    </ul>
+</body>
+
+<script>
+
+    const list = document.querySelectorAll('#list li');
+    const listArray = Array.from(list);
+
+    console.log(list); // vai ser Nodelist
+    console.log(listArray); // vai ser um Array com todos os métodos do Array
+
+
+    const names = listArray.map((name) => name.textContent); // pega o texto de dentro dos list
+
+    console.log(names); // vai exibir o conteúdo dos lis
+
+
+
+</script>
+</html>

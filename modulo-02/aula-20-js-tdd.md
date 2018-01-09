@@ -35,3 +35,5 @@
         const ireland = green`I live in ${city} the city of ${something} and ${otherThing}!`;
 
         document.body.innerHTML = ireland;
+
+ - Tagged Template vai ser sempre uma função que vai varrer um template literal e vai fazer o que você quiser.
