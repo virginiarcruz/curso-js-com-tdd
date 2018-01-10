@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>05 - Destructuring Objects</title>
+</head>
+<body>
+</body>
+
+<script>
+    var data = {
+        name: 'Willian',
+        surname: 'Justen',
+        age: 25,
+        blog: 'https://willianjusten.com.br',
+        social: {
+            twitter: '@Willian_Justen',
+            facebook: '/willianjusten'
+        }
+    };
+
+    // da forma antiga se quisesse exibir os dados do Array faria
+    // const name = data.name;
+    // const surname = data.surname;
+    // const twitter = data.social.twitter;
+
+    console.log(name, surname, twitter);
+
+    // com es6
+    const {name,surname } = data;
+    console.log(name,surname);
+
+    // para pegar identado
+    const {facebook, twitter} = data.social;
+    console.log(facebook, twitter);
+
+    const { facebook : fb } = data.social;
+    console.log(fb);
+
+
+</script>
+</html>

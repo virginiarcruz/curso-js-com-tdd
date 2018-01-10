@@ -102,7 +102,7 @@
    - Transforma a string em um Array todo separado
 
 
-- Exemplo
+  - Exemplo
 
         <ul id="list">
                 <li>Vick</li>
@@ -121,3 +121,87 @@
 
         console.log(names); // vai exibir o conteúdo dos lis
 
+# Aula 25 - Array.of()
+
+* Permite criar um Array através de certos elementos. Posso juntar vários dados e transformar em array de forma rápida e simples.
+
+        const array = Array.of(1,6,'Virginia', 'Rodrigues');
+        console.log(array)// vai exibir o array de 4 itens
+
+# Aula 26 - Array.find() e Array.findIndex()
+
+* Servem para procurar um dado e o outro um index dentro do Array.
+  - Diferença do .find() para o filter() - busca o primeiro valor que encontra dentro do array o filter  responde true ou false a uma condição. O find para quando encontra a primeira condição correspondente.
+
+  - Exemplo:
+
+        const sampleArray = [4, -5, 0, -1];
+        const underZero = sampleArray.find( x => x < 0); 
+
+        console.log(underZero);
+    
+    - se X (que e cada valor do array) for menos < 0, ele vai mostrar no console. O primeiro valor que encontrar.
+
+
+  - Com o findIndex() - vai mostrar o índice
+
+        const underZeroIndex = sampleArray.findIndex( x => x < 0); 
+
+  - Posso fazer uma busca por objetos, buscar dados dentro de um objeto por exemplo:
+
+        const data = [
+                {
+                name: 'Willian',
+                age: 26,
+                city: 'Dublin'
+                },
+                {
+                name: 'Jonas',
+                age: 22,
+                city: 'Cologne'
+                }
+        ];
+
+        const will = data.find(person => person.name === 'Willian');
+        console.log(will); 
+
+   - Nesse caso ele vai buscar no Array de objetos data, o objeto com name === Willian, quando encontrar ele exibe o dados inteiros do objeto, ou seja: name,age e city.
+
+   - No caso de desejar saber o índice do objeto buscado só utilizar o findIndex
+
+        const will = data.find(person => person.name === 'Willian');
+
+
+# Aula 27 - array.fill()
+
+* Serve pra preencher os Arrays dentro do JS
+
+  - Se eu quiser criar um array com todos os dados preenchidos faço conforme abaixo:
+
+        const arr = new Array(50);
+        arr.fill('lol');
+        console.log(arr)
+
+    - vai preencher os 50 itens do array com 'lol'
+  
+  - Posso ainda dizer o índice que ele pode começar e terminar a preencher. Por exemplo:
+
+        const arr = new Array(50);
+        arr.fill('lol', 3, 6);
+        console.log(arr)
+
+    - Vai aparecer o indice 3, 4 e 5 preenchidos e o restante para preencher. Mas o array permanece com o tamanho de 50
+
+
+ - Se eu já tiver um array e quiser modificar algum item:
+
+        const newArr = [1,2,3,4,5,6];
+        newArr.fill('lol', 1, 3);
+        console.log(newArr);
+
+  - vai exibir então: [1, 'lol', 'lol', 3, 4, 5,6]
+
+
+
+        
+ 

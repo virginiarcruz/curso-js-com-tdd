@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>04 - Array.find e Array.findIndex</title>
+</head>
+<body>
+</body>
+
+<script>
+    const data = [
+        {
+            name: 'Willian',
+            age: 26,
+            city: 'Dublin'
+        },
+        {
+            name: 'Jonas',
+            age: 22,
+            city: 'Cologne'
+        }
+    ];
+
+    // const sampleArray = [4, -5, 0, -1];
+    // const underZero = sampleArray.find( x => x < 0); // se X (que e cada valor do array) for menos < 0, ele vai mostrar no console. O primeiro valor que encontrar.
+    // const underZeroIndex = sampleArray.find( x => x < 0); // vai mosntrar o idenx
+    // console.log(underZero);
+
+    const will = data.find(person => person.name === 'Willian');
+    console.log(will); // Vai exibir o objeto de name = Willian
+
+
+</script>
+</html>
