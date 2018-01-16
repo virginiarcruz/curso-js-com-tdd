@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>07 - Promises Intro</title>
+</head>
+<body>
+</body>
+
+<script>
+
+    // resolve - método que vai resolver a ação
+    // reject - vai rejeitar a ação
+
+    var defer = new Promise((resolve, reject) => { 
+        setTimeout( () => {
+            if(true) {
+                resolve('Hello! It works!');
+            } else {
+                reject('Error!');
+            }
+        }, 2000);
+        
+    });
+    
+    // then - quando finalizar, faça alguma coisa
+    // catch - quando eu quiser tratar um erro
+
+    defer
+        .then( (data) => console.log(data))
+        .catch( (err) => console.log(err));
+
+    // é possível encadear o then
+
+    defer
+        .then( (data) => {
+            console.log(data);
+            return foo;
+        })
+        .then( (data) => console.log(data))
+        .catch( (err) => console.log(err));
+
+// vai receber true, cai no data que ele recebeu primeiro e retorna foo, depois vai retornar o foo.
+
+</script>
+</html>

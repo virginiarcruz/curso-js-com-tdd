@@ -51,9 +51,22 @@
 
         const arr = ['Virginia', 'Rodrigues', 25, 'Dublin'];
 
-        const [ name, surname, age, city] = arr;
+        const [name, surname, age, city] = arr;
 
         console.log(name, surname, age, city);
 
   - Ao invés das {} usar [].
   - No console vai exibir os dados do Array.
+
+
+# Aula 30 - Fazendo swap de variáveis com destructuring
+
+* Trocar o valor das variáveis sem ter que criar variáveis extras
+
+
+        let a = 42;
+        let b = 21;
+
+        [a, b] = [b, a];
+
+    - a recebe b e b recebe a

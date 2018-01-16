@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>06 - Rest Params</title>
+</head>
+<body>
+</body>
+
+<script>
+
+// com es5
+function multiply(mult, arg1, arg2, arg3) {
+    let arr = [];
+    arr.push(mult * arg1);
+    arr.push(mult * arg2);
+    arr.push(mult * arg3);
+    return arr;
+}
+
+console.log(multiply(2,1,2,3)); // [2,4,6]
+
+// com es6
+function multiply(mult, ...args) {  // varios argumentos que não sei quantos
+    return args.map(arg => arg * mult);
+}
+
+console.log(multiply(2, 1, 2, 3, 4, 5, 6)); // [2,4,6,8.10,12]
+
+</script>
+</html>
