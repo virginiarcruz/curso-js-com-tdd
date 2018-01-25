@@ -126,7 +126,7 @@
     - Não permite iteração.
 
 
-# Aula 47 - Introdução ao Map
+# Aula 47 e 48 - Introdução ao Map 4 WeakMap
 
 * É parecido com o objeto, onde definimos chave e valor
 * Exemplo:
@@ -152,7 +152,10 @@
 
 
 
+# WeakMap
 
+        wm.set(obj1, 'Info do Wiliam');
+        wm.set(obj2, 'Info do Jonas');
 
         
     
