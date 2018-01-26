@@ -1,0 +1,31 @@
+{
+  "name": "curso-js-com-tdd",
+  "version": "1.0.0",
+  "description": "## Resumos das Aulas do Curso de JS com TDD na Prática com Willian Justen",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virginiarcruz/curso-js-com-tdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/virginiarcruz/curso-js-com-tdd/issues"
+  },
+  "homepage": "https://github.com/virginiarcruz/curso-js-com-tdd#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
