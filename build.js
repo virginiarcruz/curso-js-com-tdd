@@ -4777,9 +4777,12 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ramda__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(320);
 // import método from 'biblioteca'app.js
 // * Carrega tudo da lib
 // as => alias para o método (novo método)
+
+
 
 
 
@@ -4791,6 +4794,12 @@ var arr4 = __WEBPACK_IMPORTED_MODULE_0_ramda__["b" /* uniq */](arr1);
 
 console.log(arr3);
 console.log(arr4);
+
+console.log(Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["b" /* default */])(3, 2));
+console.log(Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["e" /* sub */])(3, 2));
+console.log(Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["d" /* multiplicacao */])(3, 2));
+console.log(Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["c" /* div */])(4, 2));
+console.log(__WEBPACK_IMPORTED_MODULE_1__utils_js__["a" /* PI */]);
 
 /***/ }),
 /* 120 */
@@ -13492,6 +13501,44 @@ var zipWith = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry3__
   return rv;
 });
 /* unused harmony default export */ var _unused_webpack_default_export = (zipWith);
+
+/***/ }),
+/* 320 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["e"] = sub;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return mult; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return div; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PI; });
+function sum(a, b) {
+    return a + b;
+}
+
+// método principal
+// só pode ter um default por arquivo, pode ser qualquer nome e não precisa utilizar as chaves
+
+/* harmony default export */ __webpack_exports__["b"] = (sum);
+// importar no arquivo app.js
+
+//named export
+// posso fazer assim direto
+function sub(a, b) {
+    return a - b;
+}
+
+// e posso fazer separado
+function mult(a, b) {
+    return a * b;
+}
+
+function div(a, b) {
+    return a / b;
+}
+
+var PI = 3.14;
+
+
 
 /***/ })
 /******/ ]);
