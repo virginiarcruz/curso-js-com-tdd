@@ -40,7 +40,7 @@
 
 - exercício do FizzBuzz
 
-# Aula 78 - Aplicando o Code Coverage
+# Aula 77 - Aplicando o Code Coverage
 
 * Vai analisar todos os pedaços do código que o teste executou.
   - consegue analisar se alguma parte do código não foi testada.
@@ -60,7 +60,7 @@
 
   - quando rodar ele vai criar vários arquivos numa pasta coverage, dentro tem uma index.html, ao abrir será exibido o teste e quantas vezes ele passou por cada linha do código.
 
-# Aula 79 - Rodando check-coverage antes de cada push
+# Aula 78 - Rodando check-coverage antes de cada push
 
 - Para determinar que por exemplo o código tenha pelo menos 80% passado
 - No nyc adicionar as regras para passar pelas funções e linhas
