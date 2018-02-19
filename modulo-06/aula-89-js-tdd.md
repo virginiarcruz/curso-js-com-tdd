@@ -34,3 +34,18 @@
 * Criando o método e testes para getAlbums, com mais de 1 id.
 * Criando o método e testes para getAlbumTracks
 * Refatorando o código: 
+      1. Criar um arquivo config.js para criar as variáveis por exemplo a url que se repete sempre.
+                  
+                  export const API_URL = 'https://api.spotify.com/v1';
+
+            importar: import { API_URL } from './config';
+      
+      2. criar um arquivo de utilitários 
+
+                  export const toJSON = data => data.json();
+      
+      3. mudar o main para search
+      4. criar uma index que vai exportar os 2 endpoints.
+      5. no package.json - "main": "src/index.js",
+      
+
