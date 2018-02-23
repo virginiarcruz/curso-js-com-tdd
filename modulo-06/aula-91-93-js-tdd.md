@@ -29,14 +29,14 @@
 - UMD é uma forma que trabalhar com os 3 padrões de módulo: AMD, common JS, export para browser
 - Vai ser útil porque quando eu quiser usar no browser eu coloco tudo dentro de um arquivo só que é o webpack.config
 
-```bash
+```js
 
       import {join} from 'path'
             const include = join(__dirname, 'src')
 
             export default {
                   entry: './src/index',
-                  # vai criar a pasta /dist - vai ser responsável por guardar os arquivos em UMD
+                  // vai criar a pasta /dist - vai ser responsável por guardar os arquivos em UMD
                   output: {  
                   path: join(__dirname, 'dist'),
                   libraryTarget: 'umd',
