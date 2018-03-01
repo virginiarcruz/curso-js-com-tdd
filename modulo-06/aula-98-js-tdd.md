@@ -20,4 +20,4 @@
 
 - Os arquivos que utilizam o API_URL, precisa adicionar o HEADERS.
     - Neste caso em albums e search.js
-    
+    - passar no fetch o HEADERS como opção
