@@ -1,1 +1,1 @@
-console.log('spotify Player');
+console.log('Spotify Player');

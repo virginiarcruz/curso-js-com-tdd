@@ -24,7 +24,7 @@
         npm install --save-dev babel-loader webpack webpack-dev-server
 
 - Após intalar iremos criar o arquivo `webpack.config.js` na raiz do projeto que vai ser responsável pela configuração para a compilação.
-    - configurar o path
+    - configurar o path - vai servir para resolver os caminhos certos da pasta.
 
     ```js
         // para resolvermos os caminhos corretos da pasta correta
@@ -33,12 +33,12 @@
 
         // iniciar a configuração
         module.exports = { 
-        context: path.resolve(__dirname, './src'), // qual a pasta origem de todos os arquivos
+        context: path.resolve(__dirname, './src'), // dirname - qual a pasta origem de todos os arquivos
         entry: {
             app: './main.js', // o arquivo principal que faz a chamada de todos os outros arquivos
         },
-        output: {
-            filename: 'bundle.js', //onde vou jogar o arquivo
+        output: { //onde vou jogar o arquivo
+            filename: 'bundle.js', //nome do arquivo que quero gerar
             path: path.resolve(__dirname, './example'), // lugar onde eu quero jogar, a pasta onde vamos ter os arquivos de index.html etc
         },
 
@@ -47,7 +47,7 @@
             contentBase: path.resolve(__dirname, './example'),
         },
 
-        // regras que eu quiser fazer no webpack
+        // regras que eu quiser fazer no webpack, loading, uglify etc
         module: { 
             rules: [
             {
