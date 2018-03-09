@@ -88,3 +88,6 @@ No `main.js`:
         });
         ```
     - em `AlbumInfo.js`, vamos adicionar um `return data`;
+
+  - no `main.js`, após realizados testes, pegar a tag que vou inserir os tracks.
+  - adicionar outro then onde vou dizer que queri adicionar o conteúdo de album.tracks dentro de #album-tracks;
