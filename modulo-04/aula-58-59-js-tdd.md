@@ -1,4 +1,4 @@
-# Aula 49 - Introdução a Módulos em JS
+# Aula 58 - Introdução a Módulos em JS
 
 * O que são módulos - pequenos pedaços de código, que tem uma única função.
 * Uma maneira de criar é usando _Anonymous closure_ - onde você cria as variáveis ali dentro e elas só são utilizadas naquele escopo do módulo
@@ -10,7 +10,7 @@
 
 
 
-# Aula 50 - Configurando o Webpack
+# Aula 59 - Configurando o Webpack
 
 
 * Webpack - responsável por pegar os módulos no JS e fazer com que ele rode no browser.

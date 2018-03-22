@@ -1,4 +1,4 @@
-# Aula 53 - UglifyJS no Webpack
+# Aula 62 - UglifyJS no Webpack
 
 * Dentro do Webpack tenho com melhorar o código para que ele fique em menor tamanho, retirando os comentário e warnings por exemplo.
 * Dessa forma o build vai ficar minificado e só vai chamar o que estamos utilizando
@@ -12,7 +12,7 @@
        ]
 
 
-# Aula 54 - Variáveis de Ambiente no Webpack
+# Aula 63 - Variáveis de Ambiente no Webpack
 
 
 * Algumas bibliotecas identificam se estamos em ambiente de produção ou desenvolvimento e de acordo com o ambiente definido eu consigo comprimir mais ou menos daquela biblioteca.
@@ -35,7 +35,7 @@
         NODE_ENV='development' npm run build
 
  
-# Aula 55 - Adicionando Sourcemaps em nosso código
+# Aula 64 - Adicionando Sourcemaps em nosso código
 
 
 * Quando se trabalha como módulos, arquivos minificados, fica difícil trabalhar com estes arquivos que estão completamente identados para a compressão.
@@ -55,7 +55,7 @@
 * Caso o código apresente erro ele vai indicar no console qual o arquivo e a linha que está o erro.
 
 
-# Aula 56 - Inicializando um server com Webpack
+# Aula 65 - Inicializando um server com Webpack
 
 * O Webpack nos dá a possibilidade de termos um servidor por trás com o webpack-dev-server.
 
